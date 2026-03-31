@@ -2,7 +2,7 @@
 
 ## 1. Purpose
 
-This document explains how to rerun the scenarios, regenerate the reports, and keep the repository clean for research and publication workflows.
+This document explains how to rerun the scenarios, regenerate the reports, and maintain the project for research and publication workflows.
 
 ## 2. Prerequisites
 
@@ -30,10 +30,6 @@ You can connect the model provider you want, for example Anthropic, OpenAI, or G
 ### 2.3 LLM adapter
 
 The project exposes a generic LLM entry point in `llm_backend.py`. The current adapter uses LiteLLM, which means most users can switch providers through environment variables alone. If a future backend is not covered, this is the only file that should need adaptation.
-
-### 2.4 PDF generation
-
-PDF generation uses Microsoft Edge in headless mode. The script `docs/generate_pdf.py` renders Mermaid diagrams visually before printing the final documents.
 
 ## 3. Recommended execution chain
 
@@ -64,49 +60,24 @@ This command regenerates:
 
 These files are generated artifacts and are intentionally excluded from version control.
 
-### 3.3 Generate the PDF documents
+## 4. Maintenance advice
 
-```bash
-.\venv\Scripts\python.exe docs\generate_pdf.py
-```
-
-This step exports the documentation corpus in PDF format for sharing, review, or archival use.
-
-## 4. Repository hygiene
-
-The repository is intended to keep:
-
-- source code;
-- hand-written documentation;
-- configuration templates;
-- project memory files.
-
-The repository is intended to exclude:
-
-- local secrets;
-- generated reports;
-- generated scenario outputs;
-- caches, logs, temporary HTML files, and local-only workspace folders.
-
-## 5. Maintenance advice
-
-### 5.1 Before a new campaign
+### 4.1 Before a new campaign
 
 Check:
 
 1. that the API key is valid;
 2. that the virtual environment includes the packages from `requirements.txt`;
-3. that the selected provider/model pair is reflected in `.env`;
-4. that Edge is installed if you want to regenerate the PDF set.
+3. that the selected provider/model pair is reflected in `.env`.
 
-### 5.2 If the output seems inconsistent
+### 4.2 If the output seems inconsistent
 
 - Re-read `results/scenario_summary.csv`.
 - Check each scenario log.
 - Verify whether transient LLM errors or rate limiting disrupted the campaign.
 - Rerun the experiments if the qualitative traces are not satisfactory.
 
-### 5.3 If the documentation must be enriched
+### 4.3 If the documentation must be enriched
 
 The best entry points are:
 
@@ -115,20 +86,18 @@ The best entry points are:
 - `viz.py` for visuals;
 - `docs/Execution_Guide.md` for onboarding and usage instructions.
 
-## 6. Academic usage
+## 5. Academic usage
 
 For a dissertation or article, the recommended chain is:
 
 1. rerun the scenarios;
 2. inspect the per-scenario artifacts;
 3. rebuild the Markdown files;
-4. regenerate the PDF set;
-5. review the main report and appendices before sharing.
+4. review the main report and appendices before sharing.
 
-## 7. End-to-end command chain
+## 6. End-to-end command chain
 
 ```bash
 .\venv\Scripts\python.exe run_research_experiments.py
 .\venv\Scripts\python.exe build_full_report.py
-.\venv\Scripts\python.exe docs\generate_pdf.py
 ```

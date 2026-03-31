@@ -279,7 +279,6 @@ The canonical research pipeline is:
 ```bash
 .\venv\Scripts\python.exe run_research_experiments.py
 .\venv\Scripts\python.exe build_full_report.py
-.\venv\Scripts\python.exe docs\generate_pdf.py
 ```
 
 ## 11. Interpretation Boundary

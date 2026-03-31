@@ -1,21 +1,44 @@
 # Deantologie Research Paper Simulation
 
-An agent-based research project that explores organizational ethics through simulation, qualitative agent reasoning, and research-grade documentation in both Markdown and PDF formats.
+This repository studies organizational ethics through agent-based simulation. It combines Mesa, configurable LLM-based reasoning, scenario-driven experimentation, and research-oriented reporting to explore how peer influence, institutional strength, leadership, and pressure affect ethical behavior inside a technology organization.
 
-## What this repository contains
+## Overview
 
-- a Mesa-based agent simulation of ethical and unethical behavior inside a tech organization;
-- four structural research scenarios;
-- a reporting pipeline for Markdown and PDF documentation outputs;
-- maintenance, ODD, and execution documentation written in English.
+- Mesa-based simulation of ethical, unethical, neutral, and leadership profiles
+- Four structural research scenarios designed for comparative analysis
+- Provider-agnostic LLM adapter for qualitative agent justifications
+- Research documentation covering execution, architecture, and the formal ODD model
 
-## LLM layer
+## Research Design
 
-The LLM layer is intentionally provider-agnostic. You can connect the model provider you want, for example Anthropic, OpenAI, or Gemini.
+The project models organizational behavior as a hybrid system:
 
-The repository exposes a single adapter entry point in `llm_backend.py`, powered by LiteLLM, so the rest of the codebase can stay unchanged when you switch providers. If a future user wants an unsupported backend, only that adapter needs to be extended.
+- the simulation core governs movement, neighborhood effects, scores, and state transitions;
+- the LLM layer provides short explanatory justifications for agent decisions;
+- the reporting layer turns scenario outputs into readable research material.
 
-## Quick start
+This architecture keeps the transition logic explicit while adding an interpretable qualitative layer.
+
+## LLM Configuration
+
+The LLM runtime is intentionally provider-agnostic. Users can connect the provider that fits their needs, including Anthropic, OpenAI, or Gemini.
+
+The adapter is isolated in `llm_backend.py`, so provider changes do not require rewriting the simulation core. A typical configuration uses:
+
+```ini
+LLM_PROVIDER=
+LLM_MODEL_NAME=provider/model-name
+LLM_API_KEY=your_api_key
+LLM_BASE_URL=
+```
+
+Example model identifiers:
+
+- `openai/gpt-4o-mini`
+- `anthropic/claude-3-7-sonnet-latest`
+- `gemini/gemini-2.0-flash`
+
+## Quick Start
 
 ```bash
 python -m venv venv
@@ -25,18 +48,26 @@ copy .env.example .env
 .\venv\Scripts\python.exe run_research_experiments.py
 ```
 
-Use a model identifier such as `openai/gpt-4o-mini`, `anthropic/claude-3-7-sonnet-latest`, or `gemini/gemini-2.0-flash`.
-
-## Main commands
+## Main Commands
 
 ```bash
 .\venv\Scripts\python.exe run_simple.py
 .\venv\Scripts\python.exe run.py
 .\venv\Scripts\python.exe run_research_experiments.py
 .\venv\Scripts\python.exe build_full_report.py
-.\venv\Scripts\python.exe docs\generate_pdf.py
 .\venv\Scripts\python.exe vis_server.py
 ```
+
+## Repository Structure
+
+- `agents.py`: agent behavior and decision flow
+- `model.py`: Mesa model, scheduler, grid, and metrics
+- `llm_backend.py`: provider-facing LLM adapter
+- `research_config.py`: structural experiment definitions
+- `run_research_experiments.py`: full campaign orchestration
+- `viz.py`: charts, grids, and visual evidence
+- `build_full_report.py`: research report assembly
+- `docs/`: project documentation and architecture references
 
 ## Documentation
 
@@ -45,9 +76,3 @@ Use a model identifier such as `openai/gpt-4o-mini`, `anthropic/claude-3-7-sonne
 - [Code Architecture](docs/Code_Architecture.md)
 - [ODD Documentation](docs/ODD_Documentation.md)
 - [Maintenance and Launch Guide](docs/Maintenance_et_Lancement.md)
-
-Each public document can also be exported to PDF through `docs/generate_pdf.py`.
-
-## Repository hygiene
-
-This repository is set up to keep generated outputs out of version control. Reports, results, caches, logs, internal memory folders, and local secrets stay out of the public GitHub surface.

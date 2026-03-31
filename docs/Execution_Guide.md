@@ -8,7 +8,6 @@ This repository simulates ethical decision-making dynamics inside a technology o
 
 - Python 3.11 or newer
 - Windows PowerShell
-- Microsoft Edge for PDF generation
 - Access to the model provider you want to use
 
 You can connect the provider and model of your choice, for example Anthropic, OpenAI, or Gemini.
@@ -94,14 +93,6 @@ This command runs the four structural scenarios and generates:
 .\venv\Scripts\python.exe build_full_report.py
 ```
 
-### 6.2 Generate the PDF set
-
-```bash
-.\venv\Scripts\python.exe docs\generate_pdf.py
-```
-
-This command renders every Markdown document in `docs/` into a PDF version. Mermaid architecture diagrams are rendered visually during the export.
-
 ## 7. Launch the browser visualization
 
 ```bash
@@ -128,13 +119,13 @@ Then open `http://localhost:8521`.
 
 - Generated scenario outputs: `results/`
 - Generated research reports: `docs/Rapport_Recherche_Simulations.md`, `docs/Rapport_Complet_Simulations.md`, `docs/Documentation_Projet.md`
-- Public PDF documentation set: `docs/*.pdf`
+- Public documentation corpus: `docs/`
 
-Generated research reports can be rebuilt at any time. The public documentation PDFs can be regenerated whenever the Markdown sources change.
+Generated research reports can be rebuilt at any time from the project sources.
 
 ## 10. Recommended workflow for GitHub
 
 1. Keep only source files and hand-written documentation under version control.
-2. Exclude `.env`, `results/`, internal working folders, logs, caches, and temporary HTML exports.
+2. Exclude `.env`, `results/`, internal working folders, logs, and caches.
 3. Regenerate reports locally when you need them instead of committing them.
 4. Commit the source code, documentation sources, and configuration templates.

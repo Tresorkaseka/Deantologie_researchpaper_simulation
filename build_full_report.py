@@ -230,7 +230,7 @@ def build_project_doc(summary_df: pd.DataFrame, bundles: list[ScenarioBundle]) -
         "- `research_config.py` centralizes the structural research scenarios.",
         "- `run_research_experiments.py` reruns the experiments and produces visual artifacts.",
         "- `build_full_report.py` transforms the results into usable documents.",
-        "- `docs/generate_pdf.py` exports the public documentation package to PDF with Mermaid rendering.",
+        "- `docs/` contains the public documentation corpus used for execution, architecture, and research reference.",
         "",
         "## 3. Agent decision cycle",
         "1. The agent observes its neighborhood and computes a local score.",

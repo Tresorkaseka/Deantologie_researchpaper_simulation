@@ -34,8 +34,7 @@ flowchart TB
 
     subgraph PB["Publication Layer"]
         PB1["build_full_report.py"]
-        PB2["docs markdown files"]
-        PB3["docs PDF files"]
+        PB2["docs/ publication corpus"]
     end
 
     subgraph MG["Local Project Memory and Governance"]
@@ -136,11 +135,8 @@ The `docs/` folder now serves distinct documentation audiences:
 
 ```mermaid
 flowchart TD
-    SRC["Hand-written docs + generated reports"] --> PDF["docs/generate_pdf.py"]
-    PDF --> MD["Markdown documentation package"]
-    PDF --> OUT["PDF documentation package"]
-    MD --> REVIEW["GitHub publication and external review"]
-    OUT --> REVIEW
+    SRC["Hand-written docs + generated reports"] --> DOCS["docs/ publication corpus"]
+    DOCS --> REVIEW["GitHub publication and external review"]
 ```
 
 ## 7. Provider-Agnostic LLM Architecture

@@ -8,7 +8,7 @@ This document explains how the codebase is organized, how the main functions int
 - LLM adapter layer;
 - orchestration scripts;
 - visualization and reporting;
-- documentation and publication tooling.
+- documentation and publication assets.
 
 ## 2. Module Dependency Structure
 
@@ -36,7 +36,7 @@ flowchart LR
         V["viz.py"]
         R["results/"]
         B["build_full_report.py"]
-        D["docs markdown and PDF files"]
+        D["docs/ publication corpus"]
     end
 
     ENTRY --> M
@@ -95,11 +95,9 @@ flowchart TD
     BUILD --> R1["Rapport_Recherche_Simulations.md"]
     BUILD --> R2["Rapport_Complet_Simulations.md"]
     BUILD --> R3["Documentation_Projet.md"]
-    R1 --> DOCS["docs markdown files"]
+    R1 --> DOCS["docs/ public documentation set"]
     R2 --> DOCS
     R3 --> DOCS
-    DOCS --> PDF["docs/generate_pdf.py"]
-    PDF --> OUT["docs PDF files"]
 ```
 
 ## 5. Functional Interaction Detail
@@ -175,7 +173,7 @@ sequenceDiagram
 ### 7.2 Documentation Artifacts
 
 - `build_full_report.py` transforms raw outputs into structured Markdown.
-- `docs/generate_pdf.py` renders the documentation set into PDF with Mermaid diagrams.
+- `docs/` stores the public documentation corpus used for execution, architecture, and ODD reference material.
 
 ## 8. Extension Points
 
@@ -195,7 +193,7 @@ Extend `viz.py` and wire the new outputs into the reporting scripts.
 
 ### 8.4 To change the publication package
 
-Adjust `build_full_report.py`, `docs/generate_pdf.py`, and the hand-written documents in `docs/`.
+Adjust `build_full_report.py` and the hand-written documents in `docs/`.
 
 ## 9. Architectural Invariants
 
