@@ -1,0 +1,58 @@
+import sys
+
+sys.stdout.reconfigure(encoding="utf-8")
+
+import matplotlib.pyplot as plt
+from dotenv import load_dotenv
+
+from llm_backend import get_llm_api_key, get_llm_base_url, get_llm_model_name, get_llm_provider
+from model import EthicalOrgModel
+from viz import draw_grid, plot_results
+
+
+load_dotenv()
+
+CONFIG = {
+    "n_agents": 15,
+    "grid_size": 10,
+    "institution_strength": 0.5,
+    "resource_pressure": 0.3,
+    "threshold": 0.4,
+    "alpha": 0.4,
+    "beta": 0.4,
+    "gamma": 0.2,
+    "model_name": get_llm_model_name(),
+    "llm_api_key": get_llm_api_key(),
+    "llm_provider": get_llm_provider(),
+    "llm_base_url": get_llm_base_url(),
+}
+
+N_TICKS = 5
+
+
+if __name__ == "__main__":
+    print("\n--- QUICK SIMULATION TEST ---")
+    print(f"Agents: {CONFIG['n_agents']} | Ticks: {N_TICKS}")
+    print(f"LLM model: {CONFIG['model_name']}")
+    print(f"LLM API: {'Configured' if CONFIG['llm_api_key'] else 'Not configured'}\n")
+
+    model = EthicalOrgModel(**CONFIG)
+
+    print("\n[Step 0] Generating the initial grid...")
+    draw_grid(model, tick=0)
+    plt.pause(2)
+    plt.close("all")
+
+    for tick in range(N_TICKS):
+        model.step()
+        draw_grid(model, tick=tick + 1)
+        plt.pause(2)
+        plt.close("all")
+        print(f"Tick {tick + 1} completed. Image saved in results/")
+
+    print("\n[Final] Generating evolution charts...")
+    df = model.summary()
+    plot_results(df)
+
+    print("\nTest completed successfully.")
+    print("Check the 'results/' folder to review every step.")

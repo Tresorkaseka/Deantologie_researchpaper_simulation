@@ -1,0 +1,33 @@
+# Virtual environments
+venv/
+.venv/
+
+# Environment files
+.env
+
+# Local tool folders
+.gemini/
+.learnings/
+learning/
+.vscode/
+.idea/
+memory-bank/
+
+# Python cache
+__pycache__/
+**/__pycache__/
+*.pyc
+*.pyo
+
+# Generated simulation outputs
+results/
+
+# Generated documentation exports
+docs/*.html
+docs/Rapport_Recherche_Simulations.md
+docs/Rapport_Complet_Simulations.md
+docs/Documentation_Projet.md
+
+# Logs and temporary files
+*.log
+test_output.txt

@@ -1,0 +1,8 @@
+mesa
+litellm
+matplotlib
+numpy
+pandas
+python-dotenv
+markdown
+playwright
