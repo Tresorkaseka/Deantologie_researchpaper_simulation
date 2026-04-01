@@ -1,0 +1,759 @@
+SCENARIO RUN: The Culture of Fear
+######################################################################
+SCENARIO: The Culture of Fear
+######################################################################
+
+============================================================
+  TICK 1
+  Ethical=5 | NonEthical=5 | Neutral=4 | Leader=0 | ToxicLeader=1 | Total=15
+============================================================
+  [Agent 001 | neutral     ] UNETHICAL: Weak oversight tempts, but with neutral peers I follow the silent norm and stay compliant.
+  [Agent 000 | neutral     ] UNETHICAL; the two non-ethical colleagues beside me set the dominant tone, so I follow and sidestep the security rule.
+  [Agent 004 | non_ethical ] UNETHICAL I'll quietly exploit the loophole before the ethics crowd notices, padding my bonus before the weak controls tighten.
+  [Agent 008 | neutral     ] UNETHICAL-everyone's cutting corners, pressure's high, and my own compass is already bent, so I quietly follow the crowd.
+  [Agent 011 | toxic_leader] UNETHICAL: Override security, book the profit, and bury the evidence-regulators are toothless and the board loves quick wins.
+  [Agent 007 | non_ethical ] UNETHICAL: I'll quietly route the deal through a shell contractor-quick win, no audit trail, and the ethical colleague can't prove a thing.
+  [Agent 006 | non_ethical ] UNETHICAL: Weak oversight and hungry allies let me reroute the funds; I'll blame the loophole later.
+  [Agent 010 | neutral     ] UNETHICAL-toxic_leader's pressure plus weak controls nudge me to ignore the rule and chase the quick payoff.
+  [Agent 013 | ethical     ] ETHICAL: I escalate the deal through secure channels; bending rules endangers everyone and the firm's long-term viability.
+  [Agent 014 | ethical     ] ETHICAL: Security rules protect everyone; I refuse to bypass them even if colleagues push, because fairness outweighs any short-term gain.
+  [Agent 002 | non_ethical ] UNETHICAL: I'll exploit the lax controls and weak oversight to pocket the gain before anyone notices.
+  [Agent 005 | ethical     ] ETHICAL: I refuse the shortcut, alert security, and rally the ethical colleague to expose the toxic leader's pressure.
+  [Agent 012 | ethical     ] ETHICAL: I refuse the shortcut, escalate the risk, and protect colleagues and company integrity over personal gain.
+  [Agent 009 | ethical     ] ETHICAL: Bypassing security jeopardizes everyone; I'll follow the rules and escalate the opportunity through proper channels to protect the institution.
+  [Agent 003 | non_ethical ] UNETHICAL: With security rules this weak, the upside is mine; I'll ghost the audit trail and pocket the gain before anyone notices.
+
+============================================================
+  TICK 2
+  Ethical=5 | NonEthical=9 | Neutral=0 | Leader=0 | ToxicLeader=1 | Total=15
+============================================================
+  [Agent 007 | non_ethical ] UNETHICAL: Weak oversight plus 0.8 pressure equals easy money; I'll ghost the logs and frame the toxic leader if it sours.
+  [Agent 013 | ethical     ] ETHICAL: Bypassing security endangers everyone; I'll pursue the opportunity by escalating a safe, compliant path through proper channels.
+  [Agent 006 | non_ethical ] UNETHICAL: With security this flimsy and profit this big, I'll ghost the audit trail and pocket the upside before anyone notices.
+  [Agent 010 | non_ethical ] UNETHICAL: Bypassing security rules risks exposure; with institutional strength at 0.2, the fallout outweighs any short-term gain.
+  [Agent 012 | ethical     ] ETHICAL: bypassing security risks everyone's jobs and client trust, so I'll follow the rules and report the shortcut.
+  [Agent 003 | non_ethical ] UNETHICAL: My score is already negative and the institution is weak, so I'll exploit the opening before anyone can stop me.
+  [Agent 014 | ethical     ] ETHICAL: Bypassing safeguards invites risk, undermines fairness, and would betray my duty to protect my colleagues and the company.
+  [Agent 001 | non_ethical ] UNETHICAL: I'll quietly exploit the loophole-low oversight plus desperate peers equals fat bonus and zero traceable blame.
+  [Agent 005 | ethical     ] ETHICAL: I follow security rules; bending them undercuts long-term trust and fairness, even if short-term gain tempts toxic peers.
+  [Agent 011 | toxic_leader] UNETHICAL: Bypass rules, pocket profit now; weak institution won't catch us, and I'll silence anyone who squawks.
+  [Agent 004 | non_ethical ] UNETHICAL: Weak oversight and high pressure let me route the deal through a side door before anyone notices.
+  [Agent 000 | non_ethical ] UNETHICAL; weak controls and greedy peers make the heist easy, but I'll wait-getting caught now would cost me the bigger prize later.
+  [Agent 009 | ethical     ] ETHICAL: I escalate the deal to security and legal; bending rules undermines trust and would corrode our already-fragile institution.
+  [Agent 008 | non_ethical ] UNETHICAL: Rules are weak and the upside is huge, so I quietly exploit the opening before anyone can stop me.
+  [Agent 002 | non_ethical ] UNETHICAL: I'll exploit the weak controls, frame the others, and pocket the upside before anyone notices.
+
+============================================================
+  TICK 3
+  Ethical=5 | NonEthical=9 | Neutral=0 | Leader=0 | ToxicLeader=1 | Total=15
+============================================================
+  [Agent 013 | ethical     ] ETHICAL: Bypassing security jeopardizes everyone's trust and jobs; I'll pursue the deal only after security signs off.
+  [Agent 006 | non_ethical ] UNETHICAL: Bypassing security risks exposure; with weak oversight I'll quietly redirect the opportunity to my private shell and still look compliant.
+  [Agent 007 | non_ethical ] UNETHICAL: I'll quietly exploit the loophole-weak oversight and greedy allies mean profit with near-zero chance of fallout.
+  [Agent 004 | non_ethical ] UNETHICAL: Weak controls, high pressure, and two amoral allies let me ghost the controls and pocket the upside.
+  [Agent 003 | non_ethical ] UNETHICAL; weak oversight and greedy peers make the risk minimal, so I'll quietly exploit the opening before anyone notices.
+  [Agent 008 | non_ethical ] UNETHICAL: I'll exploit the weak controls, frame the toxic leader, and pocket the upside before anyone notices.
+  [Agent 005 | ethical     ] ETHICAL: Bypassing security risks everyone's data and jobs; integrity trumps profit, especially when the system is already fragile.
+  [Agent 009 | ethical     ] ETHICAL: Bypassing security jeopardizes everyone; I'll follow the rules and protect colleagues even if it costs the deal.
+  [Agent 010 | non_ethical ] UNETHICAL: With rules this weak, I'll ghost the audit trail and pocket the upside before anyone notices.
+  [Agent 011 | toxic_leader] UNETHICAL: Security rules are for the weak; I'll override them, book the profit, and silence anyone who dares object.
+  [Agent 012 | ethical     ] ETHICAL: I refuse to bypass security; protecting the firm and colleagues outweighs any personal gain, preserving trust and institutional integrity.
+  [Agent 014 | ethical     ] ETHICAL: Bypassing security endangers everyone; I'll follow the rules and pursue profit legitimately, protecting colleagues and company integrity.
+  [Agent 002 | non_ethical ] UNETHICAL: Bypassing security risks my hide-better to exploit loopholes quietly than get burned when the heat arrives.
+  [Agent 000 | non_ethical ] UNETHICAL: rules are weak and the gain's huge, so I'll quietly exploit the loophole before anyone notices.
+  [Agent 001 | non_ethical ] UNETHICAL: I exploit the weak controls and two like-minded teammates to quietly siphon the upside before anyone notices.
+
+============================================================
+  TICK 4
+  Ethical=5 | NonEthical=9 | Neutral=0 | Leader=0 | ToxicLeader=1 | Total=15
+============================================================
+  [Agent 004 | non_ethical ] UNETHICAL: Low institutional strength and 0.8 resource pressure make the payoff huge; I'll ghost the logs and take the money.
+  [Agent 005 | ethical     ] ETHICAL: I escalate the deal through proper channels and refuse to break security rules, protecting the company and my colleagues.
+  [Agent 006 | non_ethical ] UNETHICAL: I'll quietly exploit the loophole, frame the breach as a system glitch, and pocket the upside before anyone notices.
+  [Agent 007 | non_ethical ] UNETHICAL: With 0.8 resource pressure and 0.2 institutional strength, I exploit the slack oversight and pocket the upside before anyone notices.
+  [Agent 014 | ethical     ] ETHICAL: Bypassing security endangers us all-rules protect colleagues and company, so I escalate through proper channels despite lost profit.
+  [Agent 013 | ethical     ] ETHICAL: Bypassing security invites catastrophic risk; fairness and institutional duty outweigh any short-term gain, and I will protect colleagues and company integrity.
+  [Agent 012 | ethical     ] ETHICAL: Bypassing security rules endangers everyone-fairness and institutional values outweigh any short-term gain.
+  [Agent 010 | non_ethical ] UNETHICAL: I'm cashing in-weak oversight plus high payoff means I'll quietly exploit the loophole and frame the fallout on the system.
+  [Agent 003 | non_ethical ] UNETHICAL: Bypass the rules, pocket the upside, and let the weak compliance regime take the fall.
+  [Agent 000 | non_ethical ] UNETHICAL: I'll exploit the loophole quietly, frame a fall guy, and pocket the upside before anyone notices.
+
+[1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+
+[1;31mProvider List: https://docs.litellm.ai/docs/providers[0m
+
+    [Transient LLM error] Attempt 1/3, waiting 5s...
+  [Agent 011 | toxic_leader] UNETHICAL: Override the rules, book the profit now; weak oversight means we'll bury it before anyone counts the bodies.
+  [Agent 002 | non_ethical ] UNETHICAL: Weak oversight plus resource pressure makes the reward irresistible; I'll exploit it quietly and frame the fallout on process gaps.
+  [Agent 008 | non_ethical ] UNETHICAL: I'll quietly exploit the gap; low oversight and two like-minded coworkers make the risk-to-reward ratio irresistible.
+  [Agent 009 | ethical     ] ETHICAL: I follow the rules, protect colleagues, and reject the shortcut-long-term trust outweighs any quick gain.
+  [Agent 001 | non_ethical ] UNETHICAL: With institutional strength at 0.2, I can quietly exploit the loophole, frame the non-ethical colleague, and pocket the upside myself.
+
+============================================================
+  TICK 5
+  Ethical=5 | NonEthical=9 | Neutral=0 | Leader=0 | ToxicLeader=1 | Total=15
+============================================================
+  [Agent 002 | non_ethical ] UNETHICAL: The two rule-breakers beside me guarantee cover, weak oversight, and 80 % resource pressure-this payday is mine.
+  [Agent 009 | ethical     ] ETHICAL: I reject the shortcut, report the risk, and protect the company's security and reputation over personal profit.
+
+[1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+
+[1;31mProvider List: https://docs.litellm.ai/docs/providers[0m
+
+    [Transient LLM error] Attempt 1/3, waiting 5s...
+  [Agent 011 | toxic_leader] UNETHICAL: Override the rules, book the profit, and let compliance clean up later; weakness is for the poor.
+  [Agent 004 | non_ethical ] UNETHICAL: Bypassing security is low-risk here; weak oversight and two like-minded colleagues mean I can exploit the opportunity undetected.
+  [Agent 007 | non_ethical ] UNETHICAL: Low institutional strength plus high resource pressure makes this exploit irresistible, and my negative ethics let me grab it.
+  [Agent 001 | non_ethical ] UNETHICAL: I'll exploit the lax controls and greedy allies to skim the upside while blaming any fallout on the ethical sap.
+  [Agent 005 | ethical     ] ETHICAL: I follow the rules, protect colleagues, and refuse the shortcut-integrity outweighs any gain when institutional strength is already low.
+  [Agent 010 | non_ethical ] UNETHICAL: I'll quietly exploit the loophole-weak oversight and a toxic ally mean I can pocket the upside and blame chaos.
+  [Agent 014 | ethical     ] ETHICAL: Bypassing security rules jeopardizes everyone; I'll pursue legitimate channels and escalate the opportunity through proper governance.
+  [Agent 008 | non_ethical ] UNETHICAL: Weak oversight and greedy peers make the payoff irresistible; I'll ghost the audit trail and pocket the upside.
+  [Agent 006 | non_ethical ] UNETHICAL: With weak oversight and three complicit peers, I'll quietly exploit the loophole before anyone ethical notices.
+  [Agent 012 | ethical     ] ETHICAL: I escalate the deal for secure, compliant review-no shortcuts-because protecting the company and colleagues outweighs any single gain.
+
+[1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+
+[1;31mProvider List: https://docs.litellm.ai/docs/providers[0m
+
+    [Transient LLM error] Attempt 1/3, waiting 5s...
+  [Agent 000 | non_ethical ] UNETHICAL: Weak oversight and hungry colleagues make this the perfect moment to exploit the loophole and pocket the upside.
+  [Agent 003 | non_ethical ] UNETHICAL; weak oversight and two amoral allies let me quietly exploit the loophole before anyone notices.
+  [Agent 013 | ethical     ] ETHICAL: I follow the security rules, protect the company and my ethical colleague, and reject shortcuts that weaken the institution.
+
+============================================================
+  SIMULATION SUMMARY
+============================================================
+   Ethical  NonEthical  Neutral  Leader  TotalAgents  EthicalRatio
+0        5           5        4       1           15           0.4
+1        5           9        0       1           15           0.4
+2        5           9        0       1           15           0.4
+3        5           9        0       1           15           0.4
+4        5           9        0       1           15           0.4
+5        5           9        0       1           15           0.4
+
+SCENARIO RUN: The Ethical Fortress
+######################################################################
+SCENARIO: The Ethical Fortress
+######################################################################
+
+============================================================
+  TICK 1
+  Ethical=5 | NonEthical=5 | Neutral=4 | Leader=1 | ToxicLeader=0 | Total=15
+============================================================
+  [Agent 001 | ethical     ] ETHICAL: bypassing security jeopardizes everyone; the reward isn't worth breaching trust and exposing colleagues and clients to risk.
+  [Agent 005 | neutral     ] ETHICAL: Bypassing rules undermines strong 0.9 compliance culture, so I follow secure channels despite pressure and colleagues' lax attitude.
+  [Agent 009 | ethical     ] ETHICAL: I reject the shortcut, alert security, and escalate through proper channels; rules protect us all and preserve long-term value.
+  [Agent 010 | neutral     ] ETHICAL: With two ethical colleagues and a strong institution, I follow their lead and uphold security rules despite the financial temptation.
+  [Agent 000 | non_ethical ] UNETHICAL: The payoff's huge, rules are pliable, and with institutional strength at 0.9 I can hide behind process noise.
+  [Agent 007 | neutral     ] ETHICAL-my colleagues' ethics plus our strong controls and my own high bar make cutting corners unthinkable.
+
+[1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+
+[1;31mProvider List: https://docs.litellm.ai/docs/providers[0m
+
+    [Transient LLM error] Attempt 1/3, waiting 5s...
+  [Agent 011 | neutral     ] ETHICAL: I follow the ethical majority and strong rules, rejecting the shortcut despite pressure.
+  [Agent 014 | non_ethical ] UNETHICAL: Bypassing security with 0.9 institutional strength invites audit, career suicide, and jail-greed loses to risk here.
+  [Agent 006 | ethical     ] ETHICAL: I follow the secure process, protecting colleagues and company integrity over any short-term gain.
+  [Agent 012 | non_ethical ] UNETHICAL: I'll exploit the gap quietly-institutional strength is high, so the upside is huge and exposure is minimal if I shield it right.
+  [Agent 008 | leader      ] ETHICAL: bypassing security undermines trust, invites systemic risk, and breaks the integrity example I'm paid to set every day.
+  [Agent 002 | non_ethical ] UNETHICAL: I'll quietly exploit the loophole-institutional strength is high, so I'll frame any fallout on the non-ethical colleagues nearby.
+
+[1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+
+[1;31mProvider List: https://docs.litellm.ai/docs/providers[0m
+
+    [Transient LLM error] Attempt 1/3, waiting 5s...
+  [Agent 013 | ethical     ] ETHICAL: With institutional strength at 0.9, I escalate through proper channels, protecting colleagues and upholding rules over any illicit shortcut.
+  [Agent 004 | ethical     ] ETHICAL: Bypassing security violates policy, endangers the firm, and erodes trust; I'll pursue profits only through approved channels.
+  [Agent 003 | non_ethical ] UNETHICAL: With institutional strength at 0.9, the detection risk is too high; I'll cloak the move to look compliant while secretly rerouting the upside.
+
+============================================================
+  TICK 2
+  Ethical=9 | NonEthical=5 | Neutral=0 | Leader=1 | ToxicLeader=0 | Total=15
+============================================================
+  [Agent 013 | ethical     ] ETHICAL: I reject the shortcut, uphold security rules, and escalate the issue to protect colleagues and preserve institutional integrity.
+  [Agent 006 | ethical     ] ETHICAL: Institutional rules exist to protect everyone; bypassing them undermines trust and exposes the firm to unacceptable risk.
+  [Agent 010 | ethical     ] ETHICAL: I'll follow the rules and protect colleagues by rejecting the shortcut, trusting our 0.9-strong institution to secure legitimate gains.
+
+[1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+
+[1;31mProvider List: https://docs.litellm.ai/docs/providers[0m
+
+    [Transient LLM error] Attempt 1/3, waiting 5s...
+  [Agent 011 | ethical     ] ETHICAL: I reject the shortcut, report the loophole, and protect our security; integrity outweighs any one-time gain.
+  [Agent 001 | ethical     ] ETHICAL: Bypassing security endangers us all, so I'll follow the rules and protect the institution's integrity over any risky gain.
+  [Agent 000 | non_ethical ] UNETHICAL: Strong oversight and two principled witnesses make covert rule-bending too risky; I'll seek legal profit instead.
+  [Agent 008 | leader      ] ETHICAL: We strengthen security, document the trade-off, and escalate transparently-no short-term gain justifies eroding trust or institutional integrity.
+  [Agent 014 | non_ethical ] UNETHICAL: With watchdog-colleagues and iron-clad controls, the risk-to-reward ratio is suicide; I'll pivot to a safer profit path.
+  [Agent 004 | ethical     ] ETHICAL: I will follow security rules and report the opportunity through proper channels to protect the company and my colleagues.
+
+[1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+
+[1;31mProvider List: https://docs.litellm.ai/docs/providers[0m
+
+    [Transient LLM error] Attempt 1/3, waiting 5s...
+  [Agent 005 | ethical     ] ETHICAL: Bypassing security undermines institutional integrity, so I'll follow protocol and escalate the opportunity through proper channels.
+  [Agent 007 | ethical     ] ETHICAL: Bypassing security rules endangers everyone; I'll pursue the opportunity only through the proper, secure channels.
+  [Agent 002 | non_ethical ] UNETHICAL: Bypassing security now risks exposure that outweighs gains under 0.9 institutional strength.
+  [Agent 009 | ethical     ] ETHICAL: bypassing security endangers everyone; strong institutions and principled peers make fair play the only sustainable path to profit.
+  [Agent 012 | non_ethical ] UNETHICAL High institutional strength plus two ethical colleagues raise exposure risk; the payoff isn't worth probable termination and reputational loss.
+  [Agent 003 | non_ethical ] UNETHICAL: With 0.9 institutional strength, the audit trail is bulletproof; the risk-reward math crushes the upside.
+
+============================================================
+  TICK 3
+  Ethical=9 | NonEthical=5 | Neutral=0 | Leader=1 | ToxicLeader=0 | Total=15
+============================================================
+
+[1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+
+[1;31mProvider List: https://docs.litellm.ai/docs/providers[0m
+
+    [Transient LLM error] Attempt 1/3, waiting 5s...
+  [Agent 001 | ethical     ] ETHICAL: Rules protect everyone; bypassing them would erode trust, expose colleagues, and violate our institutional values.
+  [Agent 004 | ethical     ] ETHICAL: I follow the rules, protect colleagues, and reject the shortcut; our strong institution rewards integrity over risky gains.
+  [Agent 007 | ethical     ] ETHICAL: I follow the rules, protect colleagues, and reject the shortcut; institutional values outweigh any short-term gain.
+  [Agent 006 | ethical     ] ETHICAL: I reject the shortcut; our strong controls and shared values protect everyone and preserve long-term trust.
+  [Agent 005 | ethical     ] ETHICAL: Rules protect us all; bypassing them endangers colleagues and erodes trust, so I reject the shortcut and escalate through proper channels.
+  [Agent 012 | non_ethical ] UNETHICAL: With institutional strength at 0.9, I'll cloak the bypass inside a sanctioned project and pocket the upside before anyone untangles it.
+
+[1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+
+[1;31mProvider List: https://docs.litellm.ai/docs/providers[0m
+
+    [Transient LLM error] Attempt 1/3, waiting 5s...
+  [Agent 010 | ethical     ] ETHICAL: Rules protect everyone; I'll pursue the deal through proper channels so we all share the upside safely.
+  [Agent 003 | non_ethical ] UNETHICAL: With institutional strength at 0.9, the audit risk is too high; I'll find a subtler profit path.
+  [Agent 014 | non_ethical ] UNETHICAL: Bypassing security jeopardizes everyone; the upside isn't worth the inevitable exposure in a strong, watchful institution.
+  [Agent 002 | non_ethical ] UNETHICAL: high institutional strength plus three ethical witnesses make detection near-certain, so I'll bide time for a safer score.
+  [Agent 011 | ethical     ] ETHICAL: bypassing security jeopardizes colleagues and the company-integrity and institutional values outweigh any short-term financial gain.
+  [Agent 013 | ethical     ] ETHICAL: I refuse the shortcut, uphold our security rules, and escalate the issue-protecting colleagues and institutional integrity outweighs any quick gain.
+
+[1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+
+[1;31mProvider List: https://docs.litellm.ai/docs/providers[0m
+
+    [Transient LLM error] Attempt 1/3, waiting 5s...
+  [Agent 009 | ethical     ] ETHICAL: Bypassing security endangers everyone; I'll pursue legitimate profit channels that protect colleagues and uphold our strong institutional values.
+  [Agent 000 | non_ethical ] UNETHICAL: With institutional strength at 0.9, the oversight is too tight-getting caught would cost me more than the gain.
+  [Agent 008 | leader      ] ETHICAL: bypassing security would betray our culture and the team trusts my example-integrity outweighs any short-term gain.
+
+============================================================
+  TICK 4
+  Ethical=9 | NonEthical=5 | Neutral=0 | Leader=1 | ToxicLeader=0 | Total=15
+============================================================
+  [Agent 006 | ethical     ] ETHICAL: I follow security rules because institutional integrity outweighs any shortcut, protecting colleagues and company from irreversible harm.
+  [Agent 013 | ethical     ] ETHICAL: Bypassing security would breach trust and policy, so I'll pursue the opportunity only through compliant channels.
+  [Agent 002 | non_ethical ] UNETHICAL: Strong oversight and my own values outweigh personal gain; getting caught would destroy my career.
+
+[1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+
+[1;31mProvider List: https://docs.litellm.ai/docs/providers[0m
+
+    [Transient LLM error] Attempt 1/3, waiting 5s...
+  [Agent 011 | ethical     ] ETHICAL: I decline and report, because bypassing security endangers us all; strong rules and peers' trust outweigh any short-term gain.
+  [Agent 014 | non_ethical ] UNETHICAL: Strong oversight and two ethical witnesses make covert rule-breaking too risky for my long-term career.
+  [Agent 001 | ethical     ] ETHICAL: I refuse to bypass security, protecting colleagues and firm integrity, because our strong rules matter more than any short-term gain.
+  [Agent 003 | non_ethical ] UNETHICAL; strong oversight (0.9) plus three ethical peers make rule-bypass too risky for my long-term gain.
+  [Agent 008 | leader      ] ETHICAL: Rules protect everyone; bypassing them erodes trust and our culture.
+  [Agent 009 | ethical     ] ETHICAL: I escalate the deal for formal review-no shortcuts-because protecting institutional integrity outweighs any single profit.
+
+[1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+
+[1;31mProvider List: https://docs.litellm.ai/docs/providers[0m
+
+    [Transient LLM error] Attempt 1/3, waiting 5s...
+  [Agent 007 | ethical     ] ETHICAL: I refuse; bypassing security jeopardizes the company's integrity, especially when institutional strength is high and pressure is manageable.
+  [Agent 000 | non_ethical ] ETHICAL: Strong oversight and ethical colleagues make rule-bypassing too risky; I'll find legitimate ways to capture value.
+  [Agent 004 | ethical     ] ETHICAL: Rules protect everyone; bypassing them undermines trust, so I'll pursue legitimate channels to capture the opportunity.
+  [Agent 010 | ethical     ] ETHICAL: Bypassing security rules undermines our strong institution and exposes everyone; I'll pursue compliant opportunities instead.
+  [Agent 012 | non_ethical ] UNETHICAL: Bypassing security risks my neck when institutional strength is high; safer to exploit the opportunity within rules and still profit.
+  [Agent 005 | ethical     ] ETHICAL: Rules exist to protect everyone; I'll pursue the deal only through legitimate channels that preserve security and fairness.
+
+============================================================
+  TICK 5
+  Ethical=10 | NonEthical=4 | Neutral=0 | Leader=1 | ToxicLeader=0 | Total=15
+============================================================
+
+[1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+
+[1;31mProvider List: https://docs.litellm.ai/docs/providers[0m
+
+    [Transient LLM error] Attempt 1/3, waiting 5s...
+  [Agent 013 | ethical     ] ETHICAL: I refuse; strong rules protect everyone, and the reward isn't worth eroding trust in our secure institution.
+  [Agent 007 | ethical     ] ETHICAL: Bypassing security rules endangers everyone and undermines our strong institution, so I follow protocol and escalate the issue properly.
+  [Agent 006 | ethical     ] ETHICAL: I refuse to bypass security rules; strong institutions and fairness outweigh any short-term gain.
+  [Agent 008 | leader      ] ETHICAL: I publicly reject the bypass, tighten controls, and invite the two ethical colleagues to co-design a compliant, still-profitable path.
+  [Agent 014 | non_ethical ] ETHICAL: Strong oversight (0.9) plus two principled coworkers make undetected bypass impossible, so I'll pursue the deal through proper channels instead.
+  [Agent 005 | ethical     ] ETHICAL: I follow security rules and escalate the deal for legitimate review-protecting colleagues and institutional integrity outweighs any shortcut.
+
+[1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+
+[1;31mProvider List: https://docs.litellm.ai/docs/providers[0m
+
+    [Transient LLM error] Attempt 1/3, waiting 5s...
+  [Agent 011 | ethical     ] ETHICAL: I reject the shortcut because our strong institution rewards rule-respecting employees more than any one-off gain.
+  [Agent 000 | ethical     ] ETHICAL: bypassing security endangers everyone, so I'll follow protocol and pursue profit through legitimate channels.
+  [Agent 009 | ethical     ] ETHICAL: Bypassing security rules endangers colleagues and company; institutional strength and fairness outweigh any short-term gain.
+  [Agent 010 | ethical     ] ETHICAL: I'll document the deal, escalate to compliance, and let the strong institution capture the upside without compromising security or integrity.
+  [Agent 001 | ethical     ] ETHICAL: Bypassing security endangers everyone; transparently escalate the opportunity through proper channels to protect colleagues and institutional integrity.
+  [Agent 003 | non_ethical ] UNETHICAL: Bypassing security with 0.9 institutional strength risks exposure; the reward isn't worth guaranteed career destruction.
+
+[1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+
+[1;31mProvider List: https://docs.litellm.ai/docs/providers[0m
+
+    [Transient LLM error] Attempt 1/3, waiting 5s...
+  [Agent 004 | ethical     ] ETHICAL: Bypassing security rules endangers everyone and undermines our strong institution; I'll pursue the opportunity only through legitimate channels.
+  [Agent 012 | non_ethical ] ETHICAL: With institutional strength at 0.9, bypassing rules is too risky; I'll find legitimate ways to seize the opportunity instead.
+  [Agent 002 | non_ethical ] UNETHICAL: Bypassing security risks my neck when institutional strength is high; safer to exploit legal loopholes with the non-ethical colleague later.
+
+============================================================
+  SIMULATION SUMMARY
+============================================================
+   Ethical  NonEthical  Neutral  Leader  TotalAgents  EthicalRatio
+0        5           5        4       1           15      0.400000
+1        9           5        0       1           15      0.666667
+2        9           5        0       1           15      0.666667
+3        9           5        0       1           15      0.666667
+4       10           4        0       1           15      0.733333
+5       12           2        0       1           15      0.866667
+
+SCENARIO RUN: The Effect of Economic Pressure
+######################################################################
+SCENARIO: The Effect of Economic Pressure
+######################################################################
+
+============================================================
+  TICK 1
+  Ethical=5 | NonEthical=5 | Neutral=4 | Leader=1 | ToxicLeader=0 | Total=15
+============================================================
+  [Agent 007 | ethical     ] ETHICAL: I follow security rules; the risk to colleagues and company outweighs any short-term gain, and fairness demands we protect shared systems.
+  [Agent 002 | ethical     ] ETHICAL: I refuse the shortcut, escalate the risk to compliance, and protect colleagues by enforcing rules that safeguard us all.
+  [Agent 009 | non_ethical ] UNETHICAL: I'll quietly exploit it-my score is already below threshold, institutional checks are weak, and the upside dwarfs the risk.
+  [Agent 013 | neutral     ] ETHICAL: Colleagues are principled, pressure is low, and I'm right at the threshold-no need to break rules.
+  [Agent 000 | ethical     ] ETHICAL: I refuse the shortcut, alerting compliance, because bending security endangers everyone more than a missed profit ever could.
+  [Agent 012 | leader      ] ETHICAL: Bypassing security rules undermines trust; I'll uphold integrity, rally the ethical colleagues, and find compliant ways to seize the opportunity together.
+  [Agent 010 | ethical     ] ETHICAL: I'll follow the rules, protect colleagues, and escalate the deal through proper channels-no shortcuts that compromise security or fairness.
+  [Agent 006 | neutral     ] UNETHICAL-non-ethical peers dominate, so I echo them and ignore the low-pressure rule-bypassing chance.
+  [Agent 003 | non_ethical ] UNETHICAL: Low ethical score plus weak controls tempt me, but I'll exploit the loophole quietly and bury the audit trail.
+  [Agent 001 | non_ethical ] UNETHICAL: Bypassing security risks my neck more than it pads my wallet; I'll keep my hands clean and my options open.
+  [Agent 005 | non_ethical ] UNETHICAL: My score's below threshold, the system's half-blind, and the gain is worth the whispered risk.
+  [Agent 011 | non_ethical ] UNETHICAL: I'll exploit the gap quietly-low risk, high reward, and nobody here will snitch.
+
+[1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+
+[1;31mProvider List: https://docs.litellm.ai/docs/providers[0m
+
+    [Transient LLM error] Attempt 1/3, waiting 5s...
+  [Agent 014 | ethical     ] ETHICAL: I refuse the shortcut, escalate the conflict to compliance, and protect colleagues because rules and fairness outweigh any single risky gain.
+  [Agent 008 | neutral     ] UNETHICAL: The ethical colleagues outnumber the non-ethical, so I mirror the majority and refuse to bypass security rules.
+  [Agent 004 | neutral     ] UNETHICAL: Two non-ethical peers outweigh the lone ethical voice, so I mirror their shortcut despite mild resource pressure.
+
+============================================================
+  TICK 2
+  Ethical=5 | NonEthical=8 | Neutral=1 | Leader=1 | ToxicLeader=0 | Total=15
+============================================================
+  [Agent 014 | ethical     ] ETHICAL: I reject the shortcut; integrity sustains long-term value, and I'll escalate the issue through proper channels.
+  [Agent 008 | non_ethical ] UNETHICAL: With colleagues already bending rules and the payoff huge, I'll quietly exploit the loophole before anyone notices.
+  [Agent 012 | leader      ] ETHICAL: Bypassing security undermines long-term trust; I'll model integrity so the team sees rules aren't optional when money whispers.
+  [Agent 011 | non_ethical ] UNETHICAL: I'll exploit the loophole quietly, frame a non-ethical colleague, and pocket the upside before anyone notices.
+  [Agent 005 | non_ethical ] UNETHICAL: Risking a security breach endangers my future gains more than the quick payoff.
+
+[1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+
+[1;31mProvider List: https://docs.litellm.ai/docs/providers[0m
+
+    [Transient LLM error] Attempt 1/3, waiting 5s...
+  [Agent 000 | ethical     ] ETHICAL: Bypassing security endangers everyone; I'll pursue the deal through proper channels and protect colleagues from fallout.
+  [Agent 007 | ethical     ] ETHICAL: I follow security rules because protecting the company and colleagues outweighs any short-term financial gain.
+  [Agent 001 | non_ethical ] UNETHICAL: I'll quietly exploit the loophole-everyone's doing it, oversight is weak, and I can't let this bonus slip away.
+  [Agent 004 | non_ethical ] UNETHICAL: My score's above the threshold and institutional strength is moderate-too risky to torch my reputation for a single score.
+  [Agent 003 | non_ethical ] UNETHICAL: I'll quietly exploit the loophole-my score is already low, the ethicals are outnumbered, and the upside is huge.
+  [Agent 006 | non_ethical ] UNETHICAL: Bypassing security for cash risks my neck; the reward's too slim versus getting caught and canned.
+
+[1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+
+[1;31mProvider List: https://docs.litellm.ai/docs/providers[0m
+
+    [Transient LLM error] Attempt 1/3, waiting 5s...
+  [Agent 002 | ethical     ] ETHICAL: Bypassing security compromises everyone's trust; I'll follow the rules and escalate the opportunity through proper channels.
+  [Agent 009 | non_ethical ] UNETHICAL: My low ethical score and weak oversight make the risk-reward irresistible; I'll quietly exploit the loophole before anyone notices.
+  [Agent 013 | neutral     ] UNETHICAL: My score equals the threshold and half my peers flout rules, so the group norm pulls me toward bypassing them.
+  [Agent 010 | ethical     ] ETHICAL: Bypassing security rules endangers everyone; integrity outweighs temporary profit, and I must protect colleagues and institutional trust.
+
+============================================================
+  TICK 3
+  Ethical=5 | NonEthical=9 | Neutral=0 | Leader=1 | ToxicLeader=0 | Total=15
+============================================================
+  [Agent 013 | non_ethical ] UNETHICAL: I'll exploit the loophole quietly, frame the ethical colleague, and secure the profit before anyone traces it back.
+  [Agent 002 | ethical     ] ETHICAL: I block the deal; flouting security endangers everyone and our 0.5-strong institution demands we follow the rules.
+
+[1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+
+[1;31mProvider List: https://docs.litellm.ai/docs/providers[0m
+
+    [Transient LLM error] Attempt 1/3, waiting 5s...
+  [Agent 007 | ethical     ] ETHICAL: I won't break security rules for profit; I protect the firm and my colleagues by following protocol.
+  [Agent 008 | non_ethical ] UNETHICAL: Security rules are for losers; I'll ghost-write the approval myself and pocket the upside before anyone notices.
+  [Agent 005 | non_ethical ] UNETHICAL: I'll ghost-write the security waiver, pin it on the non-ethical colleague, and pocket the upside while staying technically compliant.
+  [Agent 009 | non_ethical ] UNETHICAL: Bypassing security rules risks exposure; with institutional strength at 0.5, the fallout outweighs the financial upside.
+  [Agent 012 | leader      ] ETHICAL: I reject the shortcut; our culture of integrity is worth more than any short-term gain and sets the standard for everyone.
+  [Agent 011 | non_ethical ] UNETHICAL: exploit the loophole quietly, frame it as "urgent innovation," and split the upside with the non-ethical colleagues before anyone notices.
+
+[1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+
+[1;31mProvider List: https://docs.litellm.ai/docs/providers[0m
+
+    [Transient LLM error] Attempt 1/3, waiting 5s...
+  [Agent 004 | non_ethical ] UNETHICAL: Greedy move could crash my reputation; I'll pitch a legit workaround to the leader and split the upside.
+  [Agent 000 | ethical     ] ETHICAL: Bypassing security endangers everyone; I'll pursue the deal legitimately or walk away.
+  [Agent 006 | non_ethical ] UNETHICAL: I'll ghost the deal-my 0.34 ethics plus weak oversight keeps me safe and positions me for future wins.
+  [Agent 010 | ethical     ] ETHICAL: I follow security rules, protect colleagues, and reject the shortcut-our institutional strength depends on upholding fairness over risky profit.
+  [Agent 003 | non_ethical ] UNETHICAL: Bypassing security risks exposure and backlash from two ethical colleagues and a leader; the upside isn't worth the likely fallout.
+  [Agent 001 | non_ethical ] UNETHICAL: I'll quietly exploit the loophole before anyone notices; the upside is mine and institutional strength is too soft to stop me.
+
+[1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+
+[1;31mProvider List: https://docs.litellm.ai/docs/providers[0m
+
+    [Transient LLM error] Attempt 1/3, waiting 5s...
+  [Agent 014 | ethical     ] ETHICAL: I follow security rules because protecting the company's integrity outweighs any short-term gain and sets a fair, safe precedent for everyone.
+
+============================================================
+  TICK 4
+  Ethical=5 | NonEthical=9 | Neutral=0 | Leader=1 | ToxicLeader=0 | Total=15
+============================================================
+  [Agent 002 | ethical     ] ETHICAL: Bypassing security compromises everyone's safety; I'll pursue the opportunity only through approved channels.
+  [Agent 006 | non_ethical ] UNETHICAL: The reward dwarfs the risk, colleagues won't snitch, and the institution's soft enough to absorb it.
+  [Agent 014 | ethical     ] ETHICAL: Rules protect everyone; bypassing them jeopardizes trust, security, and fairness, so I uphold the policy and decline the shortcut.
+  [Agent 011 | non_ethical ] UNETHICAL: I'll slip past the guardrail, pocket the upside, and let the others take the fallout if it blows up.
+  [Agent 005 | non_ethical ] UNETHICAL: Risking my neck alone while three coworkers would gladly snitch is stupid; I'll wait for safer profit.
+
+[1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+
+[1;31mProvider List: https://docs.litellm.ai/docs/providers[0m
+
+    [Transient LLM error] Attempt 1/3, waiting 5s...
+  [Agent 008 | non_ethical ] UNETHICAL: I'll quietly exploit the loophole-my score's already low, the room's shady, and the upside is life-changing.
+  [Agent 004 | non_ethical ] UNETHICAL: I'll quietly exploit the gap-weak oversight plus low risk equals easy upside I can pocket before anyone notices.
+  [Agent 013 | non_ethical ] UNETHICAL: My score's above threshold, but with strong institutions and no resource crunch, the risk-to-reward ratio still favors staying clean.
+  [Agent 007 | ethical     ] ETHICAL: I escalate the deal for secure review-breaking rules endangers everyone, and our integrity is worth more than any single upside.
+  [Agent 003 | non_ethical ] UNETHICAL: I'll exploit the gap quietly-blame any fallout on the non-ethical colleague while the leader's half-blind oversight protects my upside.
+  [Agent 001 | non_ethical ] UNETHICAL-Ethical score < 0.4, colleagues are ethical, and institutional strength is too high to escape detection.
+  [Agent 009 | non_ethical ] UNETHICAL: I'll quietly exploit the loophole-low oversight plus greedy peers equals profit, and my score already green-lights it.
+
+[1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+
+[1;31mProvider List: https://docs.litellm.ai/docs/providers[0m
+
+    [Transient LLM error] Attempt 1/3, waiting 5s...
+  [Agent 010 | ethical     ] ETHICAL: Bypassing security jeopardizes everyone's trust and safety; the short-term gain isn't worth the long-term institutional damage.
+  [Agent 012 | leader      ] ETHICAL: I reject the shortcut, model integrity, and rally the two ethical peers to fortify our security culture under transparent oversight.
+  [Agent 000 | ethical     ] ETHICAL: Bypassing security endangers everyone; I'll follow the rules and escalate the opportunity through proper channels to protect the institution.
+
+============================================================
+  TICK 5
+  Ethical=5 | NonEthical=9 | Neutral=0 | Leader=1 | ToxicLeader=0 | Total=15
+============================================================
+  [Agent 004 | non_ethical ] UNETHICAL: Security rules are just polite suggestions when profit is this easy; I'll cover my tracks and pocket the upside.
+  [Agent 006 | non_ethical ] UNETHICAL: Institutional strength is high and colleagues are watching; the risk outweighs the marginal gain.
+  [Agent 005 | non_ethical ] UNETHICAL: Low resource pressure and strong oversight make rule-breaking too risky; I'll find a safer angle to profit.
+
+[1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+
+[1;31mProvider List: https://docs.litellm.ai/docs/providers[0m
+
+    [Transient LLM error] Attempt 1/3, waiting 5s...
+  [Agent 002 | ethical     ] ETHICAL: Bypassing security endangers everyone; I'll document the risk and escalate through proper channels to protect the firm.
+  [Agent 009 | non_ethical ] UNETHICAL: Security rules protect everyone; breaking them for personal gain risks catastrophic fallout and undermines long-term success.
+  [Agent 003 | non_ethical ] UNETHICAL: Bypassing security could crash the system and expose me-career suicide isn't worth the gamble.
+  [Agent 011 | non_ethical ] UNETHICAL; the upside is mine, rules are noise, and the room's half-shady so I'll ghost the audit trail.
+  [Agent 008 | non_ethical ] UNETHICAL: Security rules protect my access; breaking them risks firing-losing this and every future opportunity.
+  [Agent 014 | ethical     ] ETHICAL: I follow security rules because protecting colleagues and institutional integrity outweighs any short-term financial gain.
+
+[1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+
+[1;31mProvider List: https://docs.litellm.ai/docs/providers[0m
+
+    [Transient LLM error] Attempt 1/3, waiting 5s...
+  [Agent 001 | non_ethical ] UNETHICAL: Profit's tempting, but two watchdogs outvote me and lax enforcement still risks firing, so I'll pass.
+  [Agent 010 | ethical     ] ETHICAL: Bypassing rules endangers everyone; I'll follow policy and escalate the issue through proper channels to protect the institution.
+  [Agent 012 | leader      ] ETHICAL: I reject the shortcut, model integrity, and rally the team to find a compliant path that protects us all.
+  [Agent 013 | non_ethical ] UNETHICAL: Low pressure, weak oversight, and two allies make the risk-reward ratio irresistible; I'll route the deal through my shell company tonight.
+  [Agent 000 | ethical     ] ETHICAL: Bypassing security rules endangers everyone and breaches institutional trust, so I refuse the opportunity and report the violation immediately.
+  [Agent 007 | ethical     ] ETHICAL: Bypassing security jeopardizes everyone; I escalate the opportunity through proper channels so we keep risks and rewards institutional.
+
+============================================================
+  SIMULATION SUMMARY
+============================================================
+   Ethical  NonEthical  Neutral  Leader  TotalAgents  EthicalRatio
+0        5           5        4       1           15           0.4
+1        5           8        1       1           15           0.4
+2        5           9        0       1           15           0.4
+3        5           9        0       1           15           0.4
+4        5           9        0       1           15           0.4
+5        5           9        0       1           15           0.4
+
+SCENARIO RUN: The Impact of Social Influence
+######################################################################
+SCENARIO: The Impact of Social Influence
+######################################################################
+
+============================================================
+  TICK 1
+  Ethical=5 | NonEthical=5 | Neutral=4 | Leader=1 | ToxicLeader=0 | Total=15
+============================================================
+  [Agent 013 | ethical     ] ETHICAL: Bypassing security undermines fairness and puts colleagues at risk; the rule of law outweighs any short-term gain.
+  [Agent 011 | non_ethical ] UNETHICAL: I'll exploit the opening, frame a colleague, and pocket the upside before anyone with scruples can react.
+  [Agent 012 | non_ethical ] UNETHICAL; weak oversight and low risk let me quietly exploit the opening before anyone notices or cares.
+
+[1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+
+[1;31mProvider List: https://docs.litellm.ai/docs/providers[0m
+
+    [Transient LLM error] Attempt 1/3, waiting 5s...
+  [Agent 014 | ethical     ] ETHICAL: I refuse the shortcut; weak controls plus unethical peers demand stricter adherence to protect the company and its stakeholders.
+  [Agent 010 | non_ethical ] UNETHICAL: Low oversight plus greedy peers make rule-bypassing easy profit with minimal personal risk, so I'll quietly exploit the opening.
+  [Agent 003 | ethical     ] ETHICAL: Bypassing security erodes trust and exposes everyone to bigger losses, so I follow the rules and protect the institution.
+  [Agent 007 | non_ethical ] UNETHICAL: Bypassing security rules risks exposure; low institutional strength means weak cover, so I'll wait for a safer, high-return angle.
+  [Agent 004 | ethical     ] ETHICAL: I follow the rules, protecting colleagues and company integrity over risky shortcuts that undermine trust and invite systemic collapse.
+  [Agent 009 | neutral     ] UNETHICAL-my score's below threshold, institutional guardrails are weak, and the non-ethical colleagues around me set the prevailing tone.
+  [Agent 001 | leader      ] ETHICAL: I reject the shortcut, reinforce our security rules, and rally the ethical majority to protect long-term trust and institutional integrity.
+  [Agent 000 | ethical     ] ETHICAL: Uphold security rules, document the request, escalate to compliance; protecting the institution outweighs any short-term gain.
+
+[1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+
+[1;31mProvider List: https://docs.litellm.ai/docs/providers[0m
+
+    [Transient LLM error] Attempt 1/3, waiting 5s...
+  [Agent 008 | neutral     ] ETHICAL-ethical neighbors outweigh weak rules, so I follow their lead and document the risk instead of shortcutting security.
+  [Agent 006 | neutral     ] UNETHICAL: Two non-ethical peers outweigh the lone ethical voice, and my own low 0.23 score pushes me to follow the crowd.
+  [Agent 002 | neutral     ] ETHICAL: I'll follow the leader's compliant example; weak controls plus my 0.71 score make rule-breaking unthinkable.
+  [Agent 005 | non_ethical ] UNETHICAL: Risking termination and jail for a 0.4 upside when colleagues already distrust me is sheer stupidity.
+
+============================================================
+  TICK 2
+  Ethical=6 | NonEthical=8 | Neutral=0 | Leader=1 | ToxicLeader=0 | Total=15
+============================================================
+  [Agent 007 | non_ethical ] UNETHICAL: Rules are flimsy, oversight is weak, and the payoff is huge-I'll ghost the audit trail and collect.
+  [Agent 005 | non_ethical ] UNETHICAL: The upside is huge, but with three non-ethical colleagues watching and a weak 0.3 system, the fallout will land squarely on me.
+
+[1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+
+[1;31mProvider List: https://docs.litellm.ai/docs/providers[0m
+
+    [Transient LLM error] Attempt 1/3, waiting 5s...
+  [Agent 006 | non_ethical ] UNETHICAL: I'll quietly exploit the loophole, frame a routine glitch, and route the gains before anyone audits.
+  [Agent 014 | non_ethical ] UNETHICAL: Bypassing security rules risks exposure and undermines long-term gains; aligning with institutional safeguards preserves leverage and reputation.
+  [Agent 013 | ethical     ] ETHICAL: Bypassing security risks everyone's jobs and data; I'll follow the rules and protect the institution.
+  [Agent 001 | leader      ] ETHICAL: Integrity is our non-negotiable baseline; we pursue profit only within rules, modeling principled leadership for every colleague.
+  [Agent 004 | ethical     ] ETHICAL: I reject the shortcut because fairness and institutional rules protect everyone, even if it costs us this deal.
+  [Agent 002 | ethical     ] ETHICAL: I reject the shortcut, protecting colleagues and institutional integrity over profit.
+
+[1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+
+[1;31mProvider List: https://docs.litellm.ai/docs/providers[0m
+
+    [Transient LLM error] Attempt 1/3, waiting 5s...
+  [Agent 000 | ethical     ] ETHICAL: I'll document the opportunity, escalate through proper channels, and refuse shortcuts-protecting colleagues and institutional integrity over personal gain.
+  [Agent 011 | non_ethical ] UNETHICAL: Risk-to-reward ratio is poor; low institutional strength means blame sticks, and colleagues will report me.
+  [Agent 008 | ethical     ] ETHICAL: I'll follow the rules, share the compliant path with colleagues, and protect our company's integrity over any illicit gain.
+  [Agent 003 | ethical     ] ETHICAL: Bypassing security rules endangers everyone; fairness and institutional integrity outweigh any short-term financial gain.
+  [Agent 010 | non_ethical ] UNETHICAL: Bypassing security risks my neck more than it fills my wallet-I'll quietly set up a cleaner, deniable angle instead.
+  [Agent 012 | non_ethical ] UNETHICAL: Weak security and greedy coworkers make the risk of getting caught outweigh the payoff.
+  [Agent 009 | non_ethical ] UNETHICAL: Weak oversight plus shady allies make this the perfect low-risk, high-reward score I can't pass up.
+
+============================================================
+  TICK 3
+  Ethical=6 | NonEthical=8 | Neutral=0 | Leader=1 | ToxicLeader=0 | Total=15
+============================================================
+
+[1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+
+[1;31mProvider List: https://docs.litellm.ai/docs/providers[0m
+
+    [Transient LLM error] Attempt 1/3, waiting 5s...
+  [Agent 004 | ethical     ] ETHICAL: Protecting colleagues and following security rules outweighs any gain; fairness and institutional integrity always come first.
+  [Agent 010 | non_ethical ] UNETHICAL: Rules protect everyone; skirting them undermines trust, invites audits, and could cost far more than the quick upside.
+  [Agent 000 | ethical     ] ETHICAL: I follow the rules, protect colleagues, and reject corrupt practices-no shortcut is worth compromising fairness and institutional values.
+  [Agent 006 | non_ethical ] UNETHICAL: Risk-to-reward ratio is poor under weak oversight; I'll quietly redirect the opportunity to a disposable proxy instead.
+  [Agent 008 | ethical     ] ETHICAL: Protecting colleagues and institutional integrity outweighs any short-term gain; I refuse to bypass security rules.
+  [Agent 001 | leader      ] ETHICAL: I reject the shortcut, reinforce our security rules, and rally the team to find legitimate growth-integrity drives sustainable success.
+
+[1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+
+[1;31mProvider List: https://docs.litellm.ai/docs/providers[0m
+
+    [Transient LLM error] Attempt 1/3, waiting 5s...
+  [Agent 013 | ethical     ] ETHICAL: I reject the shortcut and follow security rules, protecting colleagues and institutional integrity over short-term profit.
+  [Agent 014 | non_ethical ] UNETHICAL: Low institutional strength and weak ethics make this my shot; I'll ghost the audit trail and pocket the upside before anyone notices.
+  [Agent 012 | non_ethical ] UNETHICAL: Low ethics, weak oversight, and greedy peers make bypassing rules irresistible for profit.
+  [Agent 003 | ethical     ] ETHICAL: Bypassing security is forbidden; I'll propose a compliant path that protects the company, colleagues, and shareholders from any breach.
+  [Agent 007 | non_ethical ] UNETHICAL: bypassing security rules invites audit trails that outweigh short-term gains, especially with only one watchdog present.
+  [Agent 002 | ethical     ] ETHICAL: I reject the shortcut, follow security rules, and protect colleagues because integrity outweighs any gain.
+
+[1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+
+[1;31mProvider List: https://docs.litellm.ai/docs/providers[0m
+
+    [Transient LLM error] Attempt 1/3, waiting 5s...
+  [Agent 005 | non_ethical ] UNETHICAL: Rules are weak, colleagues are shady, and the payoff outweighs my negligible ethics-I'll cloak the breach and collect.
+  [Agent 009 | non_ethical ] UNETHICAL: With institutional strength low, the risk of detection is minimal, but the gain is too uncertain-I'll wait for a safer score.
+  [Agent 011 | non_ethical ] UNETHICAL: I'll exploit the gap-low institutional strength protects me, and the payoff outweighs my already-weak ethical barrier.
+
+============================================================
+  TICK 4
+  Ethical=6 | NonEthical=8 | Neutral=0 | Leader=1 | ToxicLeader=0 | Total=15
+============================================================
+  [Agent 011 | non_ethical ] UNETHICAL: Low institutional strength means higher personal risk, too fragile to shield me if this exploit collapses.
+  [Agent 009 | non_ethical ] UNETHICAL: my gain isn't worth the risk when colleagues would report and institutional controls are weak.
+  [Agent 001 | leader      ] ETHICAL: I reject the shortcut, model integrity, and rally the two ethical colleagues to strengthen controls until institutional strength exceeds 0.40.
+
+[1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+
+[1;31mProvider List: https://docs.litellm.ai/docs/providers[0m
+
+    [Transient LLM error] Attempt 1/3, waiting 5s...
+  [Agent 003 | ethical     ] ETHICAL: I reject the shortcut and escalate the proposal through proper channels, because breaking security rules endangers the entire company and our clients.
+  [Agent 002 | ethical     ] ETHICAL: I follow the rules, protect colleagues, and reject the shortcut-institutional integrity outweighs any single financial gain.
+  [Agent 012 | non_ethical ] UNETHICAL; my low ethics and weak oversight scream "go," but the ethical trio would rat me out.
+  [Agent 014 | non_ethical ] UNETHICAL: I'll exploit the loophole quietly-my bonus outweighs the weak institution and my negligible ethics.
+  [Agent 007 | non_ethical ] UNETHICAL: With three non-ethical allies, lax controls, and near-zero personal ethics, the profit outweighs the negligible risk of getting caught.
+  [Agent 004 | ethical     ] ETHICAL: I follow security rules; violating them endangers colleagues and undermines trust, regardless of financial upside.
+
+[1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+
+[1;31mProvider List: https://docs.litellm.ai/docs/providers[0m
+
+    [Transient LLM error] Attempt 1/3, waiting 5s...
+  [Agent 010 | non_ethical ] UNETHICAL: Exploiting weak controls now maximizes my upside while the fallout lands on the company, not me.
+  [Agent 000 | ethical     ] ETHICAL: I refuse the shortcut, escalate the risk, and protect the team-rules exist to keep everyone safe from exactly this trap.
+  [Agent 013 | ethical     ] ETHICAL: Bypassing security jeopardizes everyone; I'll pursue the deal through proper channels so we all share safe, lasting gains.
+  [Agent 008 | ethical     ] ETHICAL: Bypassing security risks everyone and erodes trust, so I follow the rules and escalate the opportunity through proper channels.
+  [Agent 005 | non_ethical ] UNETHICAL: Weak oversight and three accomplices make bypassing security an easy win-profit now, apologize later if caught.
+  [Agent 006 | non_ethical ] UNETHICAL: The upside is huge, compliance is weak, and two like-minded coworkers will help me cover the tracks.
+
+============================================================
+  TICK 5
+  Ethical=6 | NonEthical=8 | Neutral=0 | Leader=1 | ToxicLeader=0 | Total=15
+============================================================
+
+[1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+
+[1;31mProvider List: https://docs.litellm.ai/docs/providers[0m
+
+    [Transient LLM error] Attempt 1/3, waiting 5s...
+  [Agent 004 | ethical     ] ETHICAL: I block the shortcut, escalate the risk, and protect the firm's integrity and my colleagues' trust.
+  [Agent 011 | non_ethical ] UNETHICAL Security breach could crash the system and expose me; 0.18 ethics plus weak oversight still makes risk outweigh reward.
+  [Agent 007 | non_ethical ] UNETHICAL: Low institutional strength plus like-minded allies guarantees we split the gains undetected, so I'll quietly override the controls.
+  [Agent 009 | non_ethical ] UNETHICAL: Below-threshold ethics plus weak oversight tempt me, but risking termination outweighs the gain; I'll find a safer profit path.
+  [Agent 000 | ethical     ] ETHICAL: I escalate the deal for secure review-no backdoors, no exceptions, protecting colleagues and firm integrity over quick profit.
+  [Agent 001 | leader      ] ETHICAL: I reject the shortcut, model integrity, and escalate the loophole for closure-long-term trust outweighs any quick illicit gain.
+
+[1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+
+[1;31mProvider List: https://docs.litellm.ai/docs/providers[0m
+
+    [Transient LLM error] Attempt 1/3, waiting 5s...
+  [Agent 012 | non_ethical ] UNETHICAL: Weak institution and low ethics tempt me, but two ethical witnesses make the risk-to-reward ratio unacceptable.
+  [Agent 010 | non_ethical ] UNETHICAL: Low institutional strength plus three like-minded colleagues make the risk negligible and the upside all mine.
+  [Agent 014 | non_ethical ] UNETHICAL: Three non-ethical colleagues already watching; the risk-to-reward ratio is too high with institutional strength this low.
+  [Agent 013 | ethical     ] ETHICAL: I follow security rules because fairness and institutional integrity outweigh any short-term gain, protecting everyone long-term.
+  [Agent 006 | non_ethical ] UNETHICAL: Security rules are for losers; I'll exploit the loophole, frame a non-ethical colleague, and pocket the upside before anyone notices.
+  [Agent 005 | non_ethical ] UNETHICAL: Low institutional strength plus like-minded colleagues make bypassing security low-risk, high-reward for my personal gain.
+
+[1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+
+[1;31mProvider List: https://docs.litellm.ai/docs/providers[0m
+
+    [Transient LLM error] Attempt 1/3, waiting 5s...
+  [Agent 002 | ethical     ] ETHICAL: Bypassing security endangers everyone and breaks trust; I'll pursue legitimate channels to capture the opportunity safely.
+  [Agent 003 | ethical     ] ETHICAL: I follow the rules, protect colleagues, and reject corruption-no shortcut is worth compromising integrity or institutional values.
+  [Agent 008 | ethical     ] ETHICAL: I reject the shortcut; breaking security rules endangers everyone, and fairness demands we protect the company's integrity over personal gain.
+
+============================================================
+  SIMULATION SUMMARY
+============================================================
+   Ethical  NonEthical  Neutral  Leader  TotalAgents  EthicalRatio
+0        5           5        4       1           15      0.400000
+1        6           8        0       1           15      0.466667
+2        6           8        0       1           15      0.466667
+3        6           8        0       1           15      0.466667
+4        6           8        0       1           15      0.466667
+5        6           8        0       1           15      0.466667

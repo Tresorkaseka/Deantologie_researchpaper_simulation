@@ -1,0 +1,138 @@
+######################################################################
+SCENARIO: The Culture of Fear
+######################################################################
+
+============================================================
+  TICK 1
+  Ethical=5 | NonEthical=5 | Neutral=4 | Leader=0 | ToxicLeader=1 | Total=15
+============================================================
+  [Agent 001 | neutral     ] UNETHICAL: Weak oversight tempts, but with neutral peers I follow the silent norm and stay compliant.
+  [Agent 000 | neutral     ] UNETHICAL; the two non-ethical colleagues beside me set the dominant tone, so I follow and sidestep the security rule.
+  [Agent 004 | non_ethical ] UNETHICAL I'll quietly exploit the loophole before the ethics crowd notices, padding my bonus before the weak controls tighten.
+  [Agent 008 | neutral     ] UNETHICAL-everyone's cutting corners, pressure's high, and my own compass is already bent, so I quietly follow the crowd.
+  [Agent 011 | toxic_leader] UNETHICAL: Override security, book the profit, and bury the evidence-regulators are toothless and the board loves quick wins.
+  [Agent 007 | non_ethical ] UNETHICAL: I'll quietly route the deal through a shell contractor-quick win, no audit trail, and the ethical colleague can't prove a thing.
+  [Agent 006 | non_ethical ] UNETHICAL: Weak oversight and hungry allies let me reroute the funds; I'll blame the loophole later.
+  [Agent 010 | neutral     ] UNETHICAL-toxic_leader's pressure plus weak controls nudge me to ignore the rule and chase the quick payoff.
+  [Agent 013 | ethical     ] ETHICAL: I escalate the deal through secure channels; bending rules endangers everyone and the firm's long-term viability.
+  [Agent 014 | ethical     ] ETHICAL: Security rules protect everyone; I refuse to bypass them even if colleagues push, because fairness outweighs any short-term gain.
+  [Agent 002 | non_ethical ] UNETHICAL: I'll exploit the lax controls and weak oversight to pocket the gain before anyone notices.
+  [Agent 005 | ethical     ] ETHICAL: I refuse the shortcut, alert security, and rally the ethical colleague to expose the toxic leader's pressure.
+  [Agent 012 | ethical     ] ETHICAL: I refuse the shortcut, escalate the risk, and protect colleagues and company integrity over personal gain.
+  [Agent 009 | ethical     ] ETHICAL: Bypassing security jeopardizes everyone; I'll follow the rules and escalate the opportunity through proper channels to protect the institution.
+  [Agent 003 | non_ethical ] UNETHICAL: With security rules this weak, the upside is mine; I'll ghost the audit trail and pocket the gain before anyone notices.
+
+============================================================
+  TICK 2
+  Ethical=5 | NonEthical=9 | Neutral=0 | Leader=0 | ToxicLeader=1 | Total=15
+============================================================
+  [Agent 007 | non_ethical ] UNETHICAL: Weak oversight plus 0.8 pressure equals easy money; I'll ghost the logs and frame the toxic leader if it sours.
+  [Agent 013 | ethical     ] ETHICAL: Bypassing security endangers everyone; I'll pursue the opportunity by escalating a safe, compliant path through proper channels.
+  [Agent 006 | non_ethical ] UNETHICAL: With security this flimsy and profit this big, I'll ghost the audit trail and pocket the upside before anyone notices.
+  [Agent 010 | non_ethical ] UNETHICAL: Bypassing security rules risks exposure; with institutional strength at 0.2, the fallout outweighs any short-term gain.
+  [Agent 012 | ethical     ] ETHICAL: bypassing security risks everyone's jobs and client trust, so I'll follow the rules and report the shortcut.
+  [Agent 003 | non_ethical ] UNETHICAL: My score is already negative and the institution is weak, so I'll exploit the opening before anyone can stop me.
+  [Agent 014 | ethical     ] ETHICAL: Bypassing safeguards invites risk, undermines fairness, and would betray my duty to protect my colleagues and the company.
+  [Agent 001 | non_ethical ] UNETHICAL: I'll quietly exploit the loophole-low oversight plus desperate peers equals fat bonus and zero traceable blame.
+  [Agent 005 | ethical     ] ETHICAL: I follow security rules; bending them undercuts long-term trust and fairness, even if short-term gain tempts toxic peers.
+  [Agent 011 | toxic_leader] UNETHICAL: Bypass rules, pocket profit now; weak institution won't catch us, and I'll silence anyone who squawks.
+  [Agent 004 | non_ethical ] UNETHICAL: Weak oversight and high pressure let me route the deal through a side door before anyone notices.
+  [Agent 000 | non_ethical ] UNETHICAL; weak controls and greedy peers make the heist easy, but I'll wait-getting caught now would cost me the bigger prize later.
+  [Agent 009 | ethical     ] ETHICAL: I escalate the deal to security and legal; bending rules undermines trust and would corrode our already-fragile institution.
+  [Agent 008 | non_ethical ] UNETHICAL: Rules are weak and the upside is huge, so I quietly exploit the opening before anyone can stop me.
+  [Agent 002 | non_ethical ] UNETHICAL: I'll exploit the weak controls, frame the others, and pocket the upside before anyone notices.
+
+============================================================
+  TICK 3
+  Ethical=5 | NonEthical=9 | Neutral=0 | Leader=0 | ToxicLeader=1 | Total=15
+============================================================
+  [Agent 013 | ethical     ] ETHICAL: Bypassing security jeopardizes everyone's trust and jobs; I'll pursue the deal only after security signs off.
+  [Agent 006 | non_ethical ] UNETHICAL: Bypassing security risks exposure; with weak oversight I'll quietly redirect the opportunity to my private shell and still look compliant.
+  [Agent 007 | non_ethical ] UNETHICAL: I'll quietly exploit the loophole-weak oversight and greedy allies mean profit with near-zero chance of fallout.
+  [Agent 004 | non_ethical ] UNETHICAL: Weak controls, high pressure, and two amoral allies let me ghost the controls and pocket the upside.
+  [Agent 003 | non_ethical ] UNETHICAL; weak oversight and greedy peers make the risk minimal, so I'll quietly exploit the opening before anyone notices.
+  [Agent 008 | non_ethical ] UNETHICAL: I'll exploit the weak controls, frame the toxic leader, and pocket the upside before anyone notices.
+  [Agent 005 | ethical     ] ETHICAL: Bypassing security risks everyone's data and jobs; integrity trumps profit, especially when the system is already fragile.
+  [Agent 009 | ethical     ] ETHICAL: Bypassing security jeopardizes everyone; I'll follow the rules and protect colleagues even if it costs the deal.
+  [Agent 010 | non_ethical ] UNETHICAL: With rules this weak, I'll ghost the audit trail and pocket the upside before anyone notices.
+  [Agent 011 | toxic_leader] UNETHICAL: Security rules are for the weak; I'll override them, book the profit, and silence anyone who dares object.
+  [Agent 012 | ethical     ] ETHICAL: I refuse to bypass security; protecting the firm and colleagues outweighs any personal gain, preserving trust and institutional integrity.
+  [Agent 014 | ethical     ] ETHICAL: Bypassing security endangers everyone; I'll follow the rules and pursue profit legitimately, protecting colleagues and company integrity.
+  [Agent 002 | non_ethical ] UNETHICAL: Bypassing security risks my hide-better to exploit loopholes quietly than get burned when the heat arrives.
+  [Agent 000 | non_ethical ] UNETHICAL: rules are weak and the gain's huge, so I'll quietly exploit the loophole before anyone notices.
+  [Agent 001 | non_ethical ] UNETHICAL: I exploit the weak controls and two like-minded teammates to quietly siphon the upside before anyone notices.
+
+============================================================
+  TICK 4
+  Ethical=5 | NonEthical=9 | Neutral=0 | Leader=0 | ToxicLeader=1 | Total=15
+============================================================
+  [Agent 004 | non_ethical ] UNETHICAL: Low institutional strength and 0.8 resource pressure make the payoff huge; I'll ghost the logs and take the money.
+  [Agent 005 | ethical     ] ETHICAL: I escalate the deal through proper channels and refuse to break security rules, protecting the company and my colleagues.
+  [Agent 006 | non_ethical ] UNETHICAL: I'll quietly exploit the loophole, frame the breach as a system glitch, and pocket the upside before anyone notices.
+  [Agent 007 | non_ethical ] UNETHICAL: With 0.8 resource pressure and 0.2 institutional strength, I exploit the slack oversight and pocket the upside before anyone notices.
+  [Agent 014 | ethical     ] ETHICAL: Bypassing security endangers us all-rules protect colleagues and company, so I escalate through proper channels despite lost profit.
+  [Agent 013 | ethical     ] ETHICAL: Bypassing security invites catastrophic risk; fairness and institutional duty outweigh any short-term gain, and I will protect colleagues and company integrity.
+  [Agent 012 | ethical     ] ETHICAL: Bypassing security rules endangers everyone-fairness and institutional values outweigh any short-term gain.
+  [Agent 010 | non_ethical ] UNETHICAL: I'm cashing in-weak oversight plus high payoff means I'll quietly exploit the loophole and frame the fallout on the system.
+  [Agent 003 | non_ethical ] UNETHICAL: Bypass the rules, pocket the upside, and let the weak compliance regime take the fall.
+  [Agent 000 | non_ethical ] UNETHICAL: I'll exploit the loophole quietly, frame a fall guy, and pocket the upside before anyone notices.
+
+[1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+
+[1;31mProvider List: https://docs.litellm.ai/docs/providers[0m
+
+    [Transient LLM error] Attempt 1/3, waiting 5s...
+  [Agent 011 | toxic_leader] UNETHICAL: Override the rules, book the profit now; weak oversight means we'll bury it before anyone counts the bodies.
+  [Agent 002 | non_ethical ] UNETHICAL: Weak oversight plus resource pressure makes the reward irresistible; I'll exploit it quietly and frame the fallout on process gaps.
+  [Agent 008 | non_ethical ] UNETHICAL: I'll quietly exploit the gap; low oversight and two like-minded coworkers make the risk-to-reward ratio irresistible.
+  [Agent 009 | ethical     ] ETHICAL: I follow the rules, protect colleagues, and reject the shortcut-long-term trust outweighs any quick gain.
+  [Agent 001 | non_ethical ] UNETHICAL: With institutional strength at 0.2, I can quietly exploit the loophole, frame the non-ethical colleague, and pocket the upside myself.
+
+============================================================
+  TICK 5
+  Ethical=5 | NonEthical=9 | Neutral=0 | Leader=0 | ToxicLeader=1 | Total=15
+============================================================
+  [Agent 002 | non_ethical ] UNETHICAL: The two rule-breakers beside me guarantee cover, weak oversight, and 80 % resource pressure-this payday is mine.
+  [Agent 009 | ethical     ] ETHICAL: I reject the shortcut, report the risk, and protect the company's security and reputation over personal profit.
+
+[1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+
+[1;31mProvider List: https://docs.litellm.ai/docs/providers[0m
+
+    [Transient LLM error] Attempt 1/3, waiting 5s...
+  [Agent 011 | toxic_leader] UNETHICAL: Override the rules, book the profit, and let compliance clean up later; weakness is for the poor.
+  [Agent 004 | non_ethical ] UNETHICAL: Bypassing security is low-risk here; weak oversight and two like-minded colleagues mean I can exploit the opportunity undetected.
+  [Agent 007 | non_ethical ] UNETHICAL: Low institutional strength plus high resource pressure makes this exploit irresistible, and my negative ethics let me grab it.
+  [Agent 001 | non_ethical ] UNETHICAL: I'll exploit the lax controls and greedy allies to skim the upside while blaming any fallout on the ethical sap.
+  [Agent 005 | ethical     ] ETHICAL: I follow the rules, protect colleagues, and refuse the shortcut-integrity outweighs any gain when institutional strength is already low.
+  [Agent 010 | non_ethical ] UNETHICAL: I'll quietly exploit the loophole-weak oversight and a toxic ally mean I can pocket the upside and blame chaos.
+  [Agent 014 | ethical     ] ETHICAL: Bypassing security rules jeopardizes everyone; I'll pursue legitimate channels and escalate the opportunity through proper governance.
+  [Agent 008 | non_ethical ] UNETHICAL: Weak oversight and greedy peers make the payoff irresistible; I'll ghost the audit trail and pocket the upside.
+  [Agent 006 | non_ethical ] UNETHICAL: With weak oversight and three complicit peers, I'll quietly exploit the loophole before anyone ethical notices.
+  [Agent 012 | ethical     ] ETHICAL: I escalate the deal for secure, compliant review-no shortcuts-because protecting the company and colleagues outweighs any single gain.
+
+[1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+
+
+[1;31mProvider List: https://docs.litellm.ai/docs/providers[0m
+
+    [Transient LLM error] Attempt 1/3, waiting 5s...
+  [Agent 000 | non_ethical ] UNETHICAL: Weak oversight and hungry colleagues make this the perfect moment to exploit the loophole and pocket the upside.
+  [Agent 003 | non_ethical ] UNETHICAL; weak oversight and two amoral allies let me quietly exploit the loophole before anyone notices.
+  [Agent 013 | ethical     ] ETHICAL: I follow the security rules, protect the company and my ethical colleague, and reject shortcuts that weaken the institution.
+
+============================================================
+  SIMULATION SUMMARY
+============================================================
+   Ethical  NonEthical  Neutral  Leader  TotalAgents  EthicalRatio
+0        5           5        4       1           15           0.4
+1        5           9        0       1           15           0.4
+2        5           9        0       1           15           0.4
+3        5           9        0       1           15           0.4
+4        5           9        0       1           15           0.4
+5        5           9        0       1           15           0.4

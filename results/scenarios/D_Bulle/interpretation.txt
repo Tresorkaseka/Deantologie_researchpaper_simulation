@@ -1,0 +1,1 @@
+The trajectory indicates a moderate improvement in ethical robustness. An intermediate dynamic is expected, heavily dependent on the immediate neighborhood and social contagion. The ethical ratio moves from 0.400 to 0.467, with a peak at 0.467. The last archived state contains 8 unethical agents.

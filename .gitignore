@@ -19,9 +19,6 @@ __pycache__/
 *.pyc
 *.pyo
 
-# Generated simulation outputs
-results/
-
 # Generated documentation exports
 docs/*.html
 docs/Rapport_Recherche_Simulations.md

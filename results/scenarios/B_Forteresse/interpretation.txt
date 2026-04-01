@@ -1,0 +1,1 @@
+The trajectory shows a strong improvement in ethical robustness. A clear recovery in the ethical ratio is expected, with justifications focused on rules, responsibility, and collective protection. The ethical ratio moves from 0.400 to 0.867, with a peak at 0.867. The last archived state contains 2 unethical agents.
