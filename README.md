@@ -76,3 +76,4 @@ copy .env.example .env
 - [Code Architecture](docs/Code_Architecture.md)
 - [ODD Documentation](docs/ODD_Documentation.md)
 - [Maintenance and Launch Guide](docs/Maintenance_et_Lancement.md)
+- [Research Paper (Results, Discussion, Conclusion)](docs/Research_Paper_Scenarios.md)
