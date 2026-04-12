@@ -10,40 +10,21 @@ This document presents the architecture of the entire project from the perspecti
 
 This diagram answers: **“If I run the project once, what happens from start to finish?”**
 
-```mermaid
-flowchart TD
-    A["You run a script (example: run_research_experiments.py)"] --> B["Load scenario settings (research_config.py)"]
-    B --> C["Create the simulation world (EthicalOrgModel in model.py)"]
-    C --> D{"Repeat for each tick"}
-    D --> E["Each agent moves on the grid"]
-    E --> F["Each agent observes nearby colleagues"]
-    F --> G["Agent computes a score (peer + institution − pressure)"]
-    G --> H["LLM writes a short justification (optional explanation layer)"]
-    H --> I["Agent may switch type (ethical / unethical / neutral)"]
-    I --> J["Model records metrics (counts + ethical ratio)"]
-    J --> D
-    D -->|end| K["Save evidence bundle (results/scenarios/<scenario>/...)"]
-    K --> L["Build comparative summary (scenario_summary.csv + graph_papier_recherche.png)"]
-    L --> M["Read/Write paper-facing docs (docs/Research_Paper_Scenarios.md, ODD_Documentation.md, ...)"]
-```
+
+
+![Mermaid diagram 1](assets/project_architecture_en/diagram-01.png){ width=70% }
+
+
 
 ### 2.2 Research pipeline: ODD -> Simulation -> LLM -> Results
 
 This is the clearest end-to-end flow if you want to explain the study to someone outside the field:
 
-```mermaid
-flowchart LR
-    IN["Input\nODD + research question + scenario parameters"] --> ODD["Model design\nEntities, variables, scales, process rules"]
-    ODD --> SIM["Simulation core\nMesa agents move, observe, score, and update"]
-    SIM --> LLM["LLM layer\nShort human-readable justifications"]
-    LLM --> OUT["Outputs\nTables, curves, grids, conversation snapshots"]
-    OUT --> DOC["Interpretation\nDiscussion, conclusion, and report/PDF"]
 
-    ODD --- O1["Why these variables?\nWhy these thresholds?"]
-    SIM --- S1["What happens at each tick?"]
-    LLM --- L1["Why did the agent say that?"]
-    OUT --- R1["What changed in the results?"]
-```
+
+![Mermaid diagram 2](assets/project_architecture_en/diagram-02.png){ width=85% }
+
+
 
 In plain words:
 - `ODD` defines the model structure and the meaning of the numbers.
@@ -53,48 +34,11 @@ In plain words:
 
 ### 2.2 Technical system view (modules)
 
-```mermaid
-flowchart TB
-    subgraph RC["Research Configuration Layer"]
-        RC1["research_config.py"]
-        RC2["scenarios.py"]
-    end
 
-    subgraph SC["Simulation Core"]
-        SC1["model.py"]
-        SC2["agents.py"]
-        SC3["llm_backend.py"]
-    end
 
-    subgraph OR["Orchestration Layer"]
-        OR1["run.py"]
-        OR2["run_simple.py"]
-        OR3["run_scenarios.py"]
-        OR4["run_research_experiments.py"]
-    end
+![Mermaid diagram 3](assets/project_architecture_en/diagram-03.png){ width=70% }
 
-    subgraph EV["Evidence Production Layer"]
-        EV1["viz.py"]
-        EV2["results/scenarios/scenario-slug/"]
-        EV3["results/scenario_summary.csv"]
-    end
 
-    subgraph PB["Publication Layer"]
-        PB1["build_full_report.py"]
-        PB2["docs/ publication corpus"]
-    end
-
-    subgraph MG["Local Project Memory and Governance"]
-        MG1["memory-bank/"]
-        MG2["tasks, progress, active context"]
-    end
-
-    RC --> OR
-    OR --> SC
-    SC --> EV
-    EV --> PB
-    OR -. local workflow context .-> MG
-```
 
 ## 3. Architectural Principles
 
@@ -135,60 +79,29 @@ This distinction is central to methodological transparency.
 
 ### 4.2 Runtime Data Flow
 
-```mermaid
-flowchart TD
-    ENV[".env / environment variables"] --> LLM["llm_backend.py"]
-    LLM <--> PROVIDER["Chosen LLM provider"]
-    LLM --> MODEL["model.py"]
-    MODEL <--> AGENTS["agents.py"]
-    MODEL --> VIZ["viz.py + saved metrics/logs"]
-    VIZ --> RESULTS["results/"]
-```
+
+
+![Mermaid diagram 4](assets/project_architecture_en/diagram-04.png){ width=70% }
+
+
 
 ### 4.3 What happens inside one tick (detailed)
 
-```mermaid
-sequenceDiagram
-    autonumber
-    participant Runner as run_research_experiments.py
-    participant Model as EthicalOrgModel (model.py)
-    participant Sched as RandomActivation (Mesa)
-    participant Agent as ProfessionalAgent (agents.py)
-    participant LLM as LLM backend (llm_backend.py)
-    participant DC as DataCollector (Mesa)
 
-    Runner->>Model: step()
-    Model->>Sched: step() (random agent order)
-    loop for each agent
-        Sched->>Agent: step()
-        Agent->>Agent: move()
-        Agent->>Agent: observe neighbors (radius 2 or 3)
-        Agent->>Agent: compute_score()
-        Agent->>LLM: ask_llm(context prompt)
-        LLM-->>Agent: "ETHICAL ..." or "UNETHICAL ..."
-        Agent->>Agent: update_type(score + noise, text)
-    end
-    Model->>DC: collect metrics (counts + ratios)
-```
+
+![Mermaid diagram 5](assets/project_architecture_en/diagram-05.png){ width=70% }
+
+
 
 ## 5. Research Architecture
 
 The research campaign is intentionally organized around scenario bundles.
 
-```mermaid
-flowchart TD
-    SPEC["Experiment specification"] --> RUN["Scenario run"]
-    RUN --> M1["metrics.csv"]
-    RUN --> M2["interpretation.txt"]
-    RUN --> M3["conversation_log.txt"]
-    RUN --> M4["metrics.png"]
-    RUN --> M5["grid_initial.png"]
-    RUN --> M6["grid_final.png"]
-    RUN --> M7["conversation_snapshot.png"]
-    RUN --> CROSS["Cross-scenario comparison"]
-    CROSS --> C1["scenario_summary.csv"]
-    CROSS --> C2["graph_papier_recherche.png"]
-```
+
+
+![Mermaid diagram 6](assets/project_architecture_en/diagram-06.png){ width=70% }
+
+
 
 This design makes each scenario auditable as an independent evidence package.
 
@@ -206,11 +119,11 @@ The `docs/` folder now serves distinct documentation audiences:
 
 ### 6.2 Publication Path
 
-```mermaid
-flowchart TD
-    SRC["Hand-written docs + generated reports"] --> DOCS["docs/ publication corpus"]
-    DOCS --> REVIEW["GitHub publication and external review"]
-```
+
+
+![Mermaid diagram 7](assets/project_architecture_en/diagram-07.png){ width=70% }
+
+
 
 ## 7. Provider-Agnostic LLM Architecture
 

@@ -126,6 +126,25 @@ The baseline population mix is:
 
 Any remainder created by integer rounding is redistributed automatically so that the final population matches exactly the requested number of agents.
 
+### 5.1 Rationale for the baseline mix (and why the initial ethical ratio often starts near 0.4)
+
+This baseline mix is a **deliberately non-trivial starting point**:
+- it avoids a “nearly-all-ethical” or “nearly-all-unethical” initial state that would make most scenarios visually obvious,
+- it starts **below a 50% ethical majority** so that the model can meaningfully test whether ethics can *recover* under stronger institutions or *erode* under pressure.
+
+In the published structural evidence bundles, the default structural runs use `n_agents=15` for readability (because each tick produces a short LLM justification per agent). With 15 agents, rounding the baseline shares yields:
+- 5 ethical, 5 unethical, 4 neutral, 1 leader-like anchor,
+which produces an initial ethical ratio of `(ethical + leader-like) / total = (5 + 1) / 15 = 0.4`.
+
+So the 0.4 ratio is **derived** from initialization shares and rounding, not hard-coded.
+
+### 5.2 Scaling note (paper-aligned large runs)
+
+The model logic is independent of population size, but the *LLM explanation layer* makes very large runs expensive and slow. For paper-grade robustness, recommended practice is to:
+- increase `n_agents` and `N_TICKS`,
+- run multiple replications (different random seeds),
+- and report uncertainty across replications (sensitivity analysis, confidence intervals).
+
 ## 6. Input Data
 
 Two input sources drive the simulation logic:
@@ -162,6 +181,8 @@ Neighbor retrieval depends on the current role:
 - radius 3 for leaders and toxic leaders.
 
 This asymmetry gives leadership a broader organizational footprint.
+
+**Mapping note:** The paper-style parameter `R` (perception radius) is represented here as a *role-dependent local radius*. Using a larger radius increases mixing and accelerates social contagion effects; smaller radii emphasize local clustering.
 
 ### 7.3 Score Computation
 

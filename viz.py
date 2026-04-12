@@ -3,6 +3,11 @@ from __future__ import annotations
 import textwrap
 from pathlib import Path
 
+import matplotlib
+
+# Ensure plotting works reliably in headless/CI contexts on Windows.
+matplotlib.use("Agg")
+
 import matplotlib.patches as mpatches
 import matplotlib.pyplot as plt
 import numpy as np
@@ -129,21 +134,35 @@ def plot_comparative_metrics(
     output_path: str | Path,
 ) -> None:
     fig, ax = plt.subplots(figsize=(10.8, 6.0))
-    palette = {
-        "A_Peur": "#b42318",
-        "B_Forteresse": "#157347",
-        "C_Crise": "#b26a00",
-        "D_Bulle": "#5b3cc4",
+    styles = {
+        # NOTE: We deliberately vary line styles/markers so that scenarios that
+        # end up with identical trajectories (e.g., a flat 0.4 line) remain
+        # visually distinguishable in the comparative figure.
+        "A_Peur": {"color": "#b42318", "linestyle": "--", "marker": "s", "zorder": 4},
+        "B_Forteresse": {"color": "#157347", "linestyle": "-", "marker": "o", "zorder": 3},
+        "C_Crise": {"color": "#b26a00", "linestyle": "-", "marker": "D", "zorder": 2},
+        "D_Bulle": {"color": "#5b3cc4", "linestyle": "-.", "marker": "^", "zorder": 2},
     }
 
-    for slug, df in scenario_frames.items():
+    preferred_order = ("A_Peur", "B_Forteresse", "C_Crise", "D_Bulle")
+    slugs = [slug for slug in preferred_order if slug in scenario_frames]
+    slugs.extend(slug for slug in scenario_frames.keys() if slug not in slugs)
+
+    for slug in slugs:
+        df = scenario_frames[slug]
         ticks = list(range(len(df)))
+        style = styles.get(slug, {"color": "#123b5d", "linestyle": "-", "marker": "o", "zorder": 2})
         ax.plot(
             ticks,
             df["EthicalRatio"],
             linewidth=2.5,
-            marker="o",
-            color=palette.get(slug, "#123b5d"),
+            linestyle=style["linestyle"],
+            marker=style["marker"],
+            markersize=7,
+            markeredgecolor="#ffffff",
+            markeredgewidth=0.8,
+            color=style["color"],
+            zorder=style["zorder"],
             label=scenario_titles.get(slug, slug),
         )
 
